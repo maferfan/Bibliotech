@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import Carousel from "react-grid-carousel";
+// import Carousel from "react-grid-carousel";
 import { getLivros } from "../../firebase/livros";
 import "./PaginaVendas.css";
 import { Button, Card, Col, Modal, Row } from "react-bootstrap";
@@ -26,7 +26,7 @@ export const PaginaVendas = () => {
     <div className={temaEscuro? "bg-light text-dark" : "bg-dark text-light"} style={{ minHeight: "100vh" }}>
     <div className="loja">
       <div className="Carosel">
-        <Carousel cols={4} rows={1}>
+        {/* <Carousel cols={4} rows={1}>
           {livros &&
             livros.map((livro) => (
               <Carousel.Item key={livro.id}>
@@ -46,7 +46,7 @@ export const PaginaVendas = () => {
                 </div>
               </Carousel.Item>
             ))}
-        </Carousel>
+        </Carousel> */}
         <Modal show={show} onHide={handleClose}>
           <Modal.Header closeButton>
             <Modal.Title>{livroSelecionado?.titulo}</Modal.Title>
